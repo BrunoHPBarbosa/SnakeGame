@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/console"
+    tools:context=".SnakeGameActivity">
+
+    <ImageView
+        android:id="@+id/telagame1"
+        android:layout_width="331dp"
+        android:layout_height="286dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/tela"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <com.example.myapplication.SnakeGameView
+        android:id="@+id/telagame"
+        android:layout_width="318dp"
+        android:layout_height="273dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="47dp"
+        android:layout_height="53dp"
+        android:text="0"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+
+
+    <Button
+        android:id="@+id/botaoup"
+        android:layout_width="53dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:background="@drawable/btnup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.611" />
+
+    <Button
+        android:id="@+id/btnright"
+        android:layout_width="80dp"
+        android:layout_height="53dp"
+        android:clickable="true"
+        android:background="@drawable/btnright"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.390"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <Button
+        android:id="@+id/btnleft"
+        android:layout_width="80dp"
+        android:layout_height="53dp"
+        android:clickable="true"
+        android:background="@drawable/btnleft"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.080"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <Button
+        android:id="@+id/btndown"
+        android:layout_width="53dp"
+        android:layout_height="80dp"
+        android:clickable="true"
+        android:background="@drawable/btndown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/select"
+        android:layout_width="52dp"
+        android:layout_height="53dp"
+        android:clickable="true"
+        android:background="@drawable/btnred"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.738"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.718" />
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="52dp"
+        android:layout_height="53dp"
+        android:clickable="true"
+        android:background="@drawable/btnred"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.664" />
+
+    <ImageView
+        android:id="@+id/scoreqr"
+        android:layout_width="143dp"
+        android:layout_height="156dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/telascore"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.984" />
+
+    <Button
+        android:id="@+id/multiplayer"
+        android:layout_width="78dp"
+        android:layout_height="37dp"
+        android:background="@drawable/player"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="46dp"
+        android:layout_height="25dp"
+        android:text="score"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.854" />
+
+    <ImageView
+        android:id="@+id/telacobra"
+        android:layout_width="331dp"
+        android:layout_height="286dp"
+        android:background="@drawable/tela1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/startimg"
+        android:layout_width="149dp"
+        android:layout_height="56dp"
+        android:src="@drawable/start"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.331" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
